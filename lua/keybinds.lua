@@ -18,10 +18,13 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Open NETRW
-vim.keymap.set('n', '<leader>pv', ':Explore<CR>', { desc = 'Open NETRW file explorer' })
+-- vim.keymap.set('n', '<leader>pv', ':Explore<CR>', { desc = 'Open NETRW file explorer' })
 
 -- Insert mode bindings
 vim.keymap.set('i', 'jj', '<Esc>')
+
+-- Open Neo-Tree fullscreen
+vim.keymap.set('n', '<leader>pv', ':Neotree position=current<CR>', {desc = 'Open Neo-Tree'})
 
 -- [ HARPOON ] --------------------------------------------------------------------------------------------------------
 local harpoon = require('harpoon')

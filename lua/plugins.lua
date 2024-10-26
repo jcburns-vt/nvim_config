@@ -21,13 +21,13 @@ require('lazy').setup({
   'rstacruz/vim-closer',
 
   require 'plugins.which-key',
-  --require 'plugins.trouble',
   require 'plugins.fuzzy-finder',
-  --require 'plugins.lsp',
-  --require 'plugins.autoformat',
-  --require 'plugins.autocomplete',
+  require 'plugins.lsp',
+  require 'plugins.autoformat',
+  require 'plugins.autocomplete',
   require 'plugins.harpoon',
-  --require 'plugins.vimtex',
+  require 'plugins.vimtex',
+  require 'plugins.neo-tree',
 
   -- Add git related signs to gutter
   {
