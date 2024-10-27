@@ -24,7 +24,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'jj', '<Esc>')
 
 -- Open Neo-Tree fullscreen
-vim.keymap.set('n', '<leader>pv', ':Neotree position=current<CR>', {desc = 'Open Neo-Tree'})
+vim.keymap.set('n', '<leader>pv', ':Neotree position=current<CR>', {silent = true, desc = 'Open Neo-Tree'})
 
 -- [ HARPOON ] --------------------------------------------------------------------------------------------------------
 local harpoon = require('harpoon')

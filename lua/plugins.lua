@@ -47,10 +47,11 @@ require('lazy').setup({
   {
     'folke/tokyonight.nvim',
     priority = 1000, -- Load before other start plugins
-    init = function()
-      vim.cmd.colorscheme 'tokyonight-night'
-      vim.cmd.hi 'Comment gui=none'
-    end,
+  },
+  {
+    "rose-pine/neovim",
+    priority = 1000,
+    name = "rose-pine"
   },
 
   -- Highlight todo, notes, etc in comments
@@ -94,7 +95,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'python', 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = { 'go', 'python', 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
       auto_install = false,
       highlight = {
