@@ -17,8 +17,18 @@ require('lazy').setup({
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
-  -- Auto create brackets on <CR>
-  'rstacruz/vim-closer',
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+  },
+  {
+    'windwp/nvim-ts-autotag',
+    config = true,
+  },
+
 
   require 'plugins.which-key',
   require 'plugins.fuzzy-finder',
@@ -52,6 +62,11 @@ require('lazy').setup({
     "rose-pine/neovim",
     priority = 1000,
     name = "rose-pine"
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
   },
 
   -- Highlight todo, notes, etc in comments

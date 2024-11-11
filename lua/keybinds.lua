@@ -22,6 +22,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Insert mode bindings
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('i', 'AA', '<C-o>A')
 
 -- Open Neo-Tree fullscreen
 vim.keymap.set('n', '<leader>pv', ':Neotree position=current<CR>', {silent = true, desc = 'Open Neo-Tree'})

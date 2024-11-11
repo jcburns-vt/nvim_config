@@ -1,4 +1,6 @@
 
+vim.cmd.colorscheme('rose-pine')
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -39,9 +41,9 @@ vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Sync yank and system clipboards
---vim.schedule(function()
---  vim.opt.clipboard = 'unnamedplus'
---end)
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('hightlight_yank', { clear = true }),
