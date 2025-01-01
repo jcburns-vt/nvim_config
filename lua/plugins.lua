@@ -28,7 +28,15 @@ require('lazy').setup({
     'windwp/nvim-ts-autotag',
     config = true,
   },
-
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
+  },
 
   require 'plugins.which-key',
   require 'plugins.fuzzy-finder',
@@ -68,6 +76,8 @@ require('lazy').setup({
     priority = 1000,
     config = true,
   },
+  {'thedenisnikulin/vim-cyberpunk'},
+  {'akai54/2077.nvim'},
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },

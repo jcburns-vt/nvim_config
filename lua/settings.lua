@@ -1,5 +1,6 @@
 
-vim.cmd.colorscheme('rose-pine')
+vim.opt.termguicolors = true
+vim.cmd.colorscheme('tokyonight')
 
 vim.opt.number = true
 vim.opt.relativenumber = true
